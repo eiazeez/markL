@@ -24,26 +24,26 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     
-    - name: Enter in app web depencies
-      run:  cd apps/web 
+    # - name: Enter in app web depencies
+    #   run:  cd apps/web 
 
-    - name: install app web dependencies
-      run:  npm install
+    # - name: install app web dependencies
+    #   run:  npm install
 
-    - name: get out of app web dependencies
-      run:  cd ..
+    # - name: get out of app web dependencies
+    #   run:  cd ..
 
-    - name: Enter in app api depencies
-      run:  cd api
+    # - name: Enter in app api depencies
+    #   run:  cd api
 
-    - name: install app web dependencies
-      run:  npm install
+    # - name: install app web dependencies
+    #   run:  npm install
 
-    - name: get out of app web dependencies
-      run:  cd ..
+    # - name: get out of app web dependencies
+    #   run:  cd ..
       
-    - name: return to mothership
-      run:  cd ..
+    # - name: return to mothership
+    #   run:  cd ..
 
     - name: Run E2E tests
       run: npx playwright test
